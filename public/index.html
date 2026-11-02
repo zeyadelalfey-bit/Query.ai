@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6d42d8">
+  <meta name="description" content="Quero AI - مساعدك الذكي لفهم الأسئلة والتعلم خطوة بخطوة">
+  <title>Quero AI | مساعدك الدراسي</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Quero AI الصفحة الرئيسية">
+      <span class="brand-mark">Q</span>
+      <span>Quero <b>AI</b></span>
+    </a>
+    <a class="platform-link" href="https://egy.app.spx-learning-square.com/login" target="_blank" rel="noopener noreferrer">
+      فتح منصة Quero <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow"><span class="spark">✦</span> مساعدك الدراسي الذكي</div>
+      <h1>افهم السؤال،<br><span>وتعلّم الحل.</span></h1>
+      <p class="hero-copy">اكتب سؤالك واحصل على شرح واضح خطوة بخطوة باللغة العربية.</p>
+      <div class="hero-pills">
+        <span>✦ شرح مبسّط</span>
+        <span>✓ خطوات مرتبة</span>
+        <span>⌁ باللغة العربية</span>
+      </div>
+    </section>
+
+    <section class="workspace" aria-labelledby="question-title">
+      <div class="section-heading">
+        <div>
+          <div class="mini-label">ابدأ من هنا</div>
+          <h2 id="question-title">ما السؤال الذي تريد فهمه؟</h2>
+        </div>
+        <span class="ai-orb" aria-hidden="true">✦</span>
+      </div>
+      <label class="sr-only" for="question">اكتب السؤال</label>
+      <textarea id="question" maxlength="8000" placeholder="اكتب السؤال هنا أو الصق نصه..."></textarea>
+      <div class="input-meta"><span id="char-count">0 / 8000</span><span>لا تضع كلمات مرور أو بيانات شخصية هنا</span></div>
+      <div class="actions">
+        <button id="solve-btn" class="primary-btn" type="button">
+          <span>حلّل السؤال واشرحه</span><span aria-hidden="true">✦</span>
+        </button>
+        <button id="clear-btn" class="secondary-btn" type="button">مسح</button>
+      </div>
+      <div id="notice" class="notice" role="status" aria-live="polite">
+        <span class="notice-dot"></span>
+        <span id="notice-text">اكتب سؤالًا للبدء. يحتاج المساعد إلى تفعيل خدمة الذكاء الاصطناعي من إعدادات الاستضافة.</span>
+      </div>
+    </section>
+
+    <section id="answer-card" class="answer-card" hidden aria-labelledby="answer-title">
+      <div class="answer-heading">
+        <div class="answer-icon">✦</div>
+        <div><div class="mini-label">نتيجة التحليل</div><h2 id="answer-title">الشرح والإجابة</h2></div>
+      </div>
+      <div id="answer" class="answer-content"></div>
+      <button id="copy-btn" class="copy-btn" type="button">نسخ الإجابة</button>
+    </section>
+
+    <section class="how">
+      <h2>كيف تستخدم Quero AI؟</h2>
+      <div class="steps">
+        <article><span>01</span><h3>افتح المنصة</h3><p>استخدم زر فتح منصة Quero في أعلى الصفحة.</p></article>
+        <article><span>02</span><h3>انسخ السؤال</h3><p>انسخ نص السؤال بنفسك، دون مشاركة بيانات حسابك.</p></article>
+        <article><span>03</span><h3>افهم الحل</h3><p>الصق السؤال هنا واقرأ الشرح والخطوات.</p></article>
+      </div>
+    </section>
+
+    <aside class="privacy">
+      <span class="privacy-icon">♢</span>
+      <div><b>خصوصيتك مهمة</b><p>هذا الموقع لا يطلب اسم مستخدم منصة Quero أو كلمة مرورها، ولا يتصل بحسابك أو يرسل إجابات إلى المنصة. استخدمه للمساعدة على الفهم والتعلّم.</p></div>
+    </aside>
+  </main>
+
+  <footer>Quero AI <span>·</span> مساعد تعليمي مستقل</footer>
+  <script src="/app.js"></script>
+</body>
+</html>
